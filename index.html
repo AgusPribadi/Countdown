@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Set Hitung Mundur - Input</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h2 class="card-title">Set Waktu Hitung Mundur</h2>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="hours">Jam:</label>
+                        <div class="input-group">
+                            <input type="number" id="hours" class="form-control" placeholder="Jam" min="0" max="23" required />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="resetInput('hours')">Hapus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="minutes">Menit:</label>
+                        <div class="input-group">
+                            <input type="number" id="minutes" class="form-control" placeholder="Menit" min="0" max="59" required />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="resetInput('minutes')">Hapus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="startCountdown()">Mulai Hitung Mundur</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy; 2023 Created by <a href="https://www.instagram.com/ag_prbd339/" target="_blank">Agus Pribadi</a>. All rights reserved.</div>
+        <script src="script.js"></script>
+    </body>
+</html>

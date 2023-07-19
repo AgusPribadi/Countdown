@@ -55,6 +55,11 @@ a:hover {
     .card {
         max-width: 100%;
         width: 90%;
+        padding: 20px; /* Adjust padding for better appearance */
+    }
+
+    .card-title {
+        font-size: 24px; /* Increase card title font size for better readability */
     }
 
     .form-group {
@@ -62,15 +67,21 @@ a:hover {
     }
 
     .input-group {
-        flex-direction: column;
+        flex-direction: row; /* Change back to row */
         align-items: center;
     }
 
     .input-group-append {
-        margin-top: 10px;
+        margin-top: 0; /* Reset margin */
     }
 
     .btn {
-        width: 100%;
+        width: auto; /* Remove fixed width */
+    }
+
+    /* Adjust input font size for better readability */
+    input[type="number"],
+    .btn {
+        font-size: 16px;
     }
 }

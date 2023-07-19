@@ -1,31 +1,4 @@
-@media (max-width: 576px) {
-    .container {
-        padding: 10px;
-    }
-
-    .card {
-        max-width: 100%;
-        width: 300px;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .input-group {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input-group-append {
-        margin-top: 10px;
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
-
+/* Common styles for all screen sizes */
 .container {
     display: flex;
     justify-content: center;
@@ -71,4 +44,33 @@ a {
 a:hover {
     text-decoration: underline;
     color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group-append {
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
